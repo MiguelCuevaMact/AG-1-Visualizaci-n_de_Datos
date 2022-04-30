@@ -2,5 +2,8 @@
   "name": "js",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    " .style.css": "*",
+    "null": "2.0.0"
+  }
 }

@@ -1,5 +1,5 @@
 //Import Stylesheets
-import '.style.css';
+import ' .style.css' ;
 
 
 //Gráfico de columnas. Mi 1º gráfico
@@ -14,3 +14,24 @@ var visualization = d3plus.viz ()
 .x("year")
 .y("value")
 .draw()
+
+
+d3.json("https://raw.githubusercontent.com/raul27868/07MBIG-Visualizacion-Actividades-Guiadas/master/columnas.json", function(data) {
+  var visualization = d3plus.viz()
+  .container("#viz2")
+  
+  .data(data)
+  
+  .type('bar')
+  
+  .id('name')
+  
+  .x('year')
+  
+  .y('value')
+  
+  .axes({ ticks: 'false' })
+  
+  .draw();
+  
+  });
