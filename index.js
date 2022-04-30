@@ -1,6 +1,6 @@
 //Import Stylesheets
 import ' .style.css' ;
-
+import * as d3 from 'd3';
 
 //Gráfico de columnas. Mi 1º gráfico
 var data = [{"year": 1991, "name":"alpha", "value": 15},
